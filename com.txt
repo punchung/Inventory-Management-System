@@ -1,0 +1,39 @@
+dir or ls
+เข้าโฟนเดอร์ที่ใช้cd 
+ออกจากโฟนเดอร์cd.. 
+clear
+
+npx nodemon index.js //รันไฟล์ index
+
+
+npm init -y
+npm install express
+npm install --save-dev express
+
+npm install nodemon
+npm install --save-dev nodemon
+nodemon command start = nodemon ./index.js
+
+npm install body-parser
+npm install --save-dev body-parser
+
+npm install mysql2
+
+//install or i
+npm init -y
+npm install express
+npm install nodemon
+npm install body-parser
+npm install mysql2
+npm install cors
+
+//รันnode
+npx nodemon index.js
+
+//รัน
+docker-compose up -d
+//ลบ
+docker-compose down
+
+//เมื่อdocker ใช้งานไม่ได้
+wsl --update ตรงwindows powershall 

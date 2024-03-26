@@ -1,0 +1,115 @@
+/* ส่วนของการเขียน CSS ในไฟล์ style.css*/
+
+@font-face {
+    font-family: "kanit";
+    src: url("./Kanit/Kanit-Regular.ttf");
+  }
+
+html{
+    font-family: "kanit";
+    font-size: 16px;
+}
+
+body{
+    font-family: "kanit";
+    background-color: #000000;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    border: 1px solid #000; /* เพื่อให้เห็นกล่อง */
+    background-color: #000;
+    position: absolute;
+    justify-content: start;
+    padding: 25px;
+
+}
+
+.container h1 {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.menu li {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 50%;
+    padding: 30px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    border-radius: 10px; /* ให้มุมมนรัศมี 10px */
+    border: 1px solid #000; /* เพื่อให้เห็นกล่อง */
+    background: #fff;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: -25px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+}
+
+.contain-main {
+    width: 75%;
+    height: 100%;
+    padding: 10px;
+    margin-left:auto;
+    margin-right:15px;
+    margin-top:  20px;;
+    box-sizing: border-box;
+    border-radius: 40px; /* ให้มุมมนรัศมี 10px */
+    border: 8px solid transparent;
+    background: #fff;
+    display: flex;
+    
+}
+
+.contain-main a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+
+.contain-haeder {
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    border: 1px;
+    background-color: blueviolet;
+    
+}
+
+.haeder-home,li{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    border: 10px;
+    background-color: rgb(193, 240, 64);
+
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    .flex {
+      flex-direction: column;
+    }
+    .header{
+      font-size: 24px;
+    }
+    .button{
+      width: 100%;
+    }
+  }

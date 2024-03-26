@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="haeder-from">
+            <img src="pictures/checklist.png" alt="logo" width="50px" height="50px">
+            <h1>Inventory Management System</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="Disbursement.html">Product Disbursement</a></li>
+                <li><a href="Stock.html">Stock</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contain-main">
+        <div class="contain">
+            <a>Product Form</a>
+            <br>
+        </div>
+        
+
+        <div class="contain-form">
+            <div class="flex form-input">
+                <div class="header-form">ชื่อสินค้า</div>
+                <input class="form" name="productname" type="text">
+            </div>
+            <div class="flex form-input">
+                <div class="header-form">ชื่อแบรนด์</div>
+                <input class="form" name="brand" type="text">
+            </div>
+            <div class="flex form-input">
+                <div class="header-form">รายละเอียดของสินค้า</div>
+                <input class="form" name="dissciption" type="text">
+            </div>
+            <div class="flex form-input">
+                <div class="header-form">จำนวนสินค้า</div>
+                <input class="form" name="stockon" type="number" min="0" max="1000">
+            </div>
+            <div class="flex form-input">
+                <div class="header-form">ราคาสินค้า</div>
+                <input class="form" name="price" type="number" step="0.01" pattern="[0-9]+([\.][0-9]{1,2})?">
+            </div>
+            <div class="flex category form-input">
+                <div class="header-form">หมวดหมู่สินค้า</div>
+                <div class="flex">
+                    <select name="category">
+                        <option value="เสื้อผ้าแฟชั่น">เสื้อผ้าแฟชั่น</option>
+                        <option value="อุปกรณ์อิเล็กทรอนิกส์">อุปกรณ์อิเล็กทรอนิกส์</option>
+                        <option value="อาหารและเครื่องดื่ม">อาหารและเครื่องดื่ม</option>
+                        <option value="บ้านและสวน">บ้านและสวน</option>
+                        <option value="สุขภาพและความงาม">สุขภาพและความงาม</option>
+                        <option value="ของใช้ในชีวิตประจำวัน">ของใช้ในชีวิตประจำวัน</option>
+                      </select>
+                </div>
+              </div>
+              <div class="flex form-input">
+                <div class="header-form">วันที่เพิ่มข้อมูล</div>
+                <input type="date" id="start" name="dateadd" value="2018-07-22" min="2018-01-01" max="2030-12-31" />
+            </div>
+            <div class="flex form-input">
+                <div class="header-form">วันที่อัปเดตข้อมูล</div>
+                <input type="date" id="start" name="dateup" value="2018-07-22" min="2018-01-01" max="2030-12-31" />
+            </div>
+            <div class="flex status form-input">
+                <div class="header-form">สถานะสินค้า</div>
+                <div class="flex">
+                    <div>
+                        <input name="status" type="radio" value="พร้อมขาย"> พร้อมขาย
+                      </div>
+                      <div>
+                        <input name="status" type="radio" value="หมดสต๊อก"> หมดสต๊อก
+                      </div>
+                </div>
+              </div>
+            <div class="flex form-input">
+                <div class="header-form">ลงชื่อผู้บันทึกข้อมูล </div>
+                <input class="form" name="admin" type="text">
+            </div>
+            <div class="form-input">
+                หมายเหตุ
+                <div>
+                  <textarea name="note"></textarea>
+                </div>
+              </div>
+              <div id="message" class="message"></div>
+ 
+              <div class="center">
+                <button onclick="submitData()" class="button">ส่งข้อมูลสินค้า</button>
+              </div>
+        </div>
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
+
